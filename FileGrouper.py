@@ -3,7 +3,7 @@ from os import mkdir, path, walk, rename
 import time, datetime
 
 #Your starting directory
-startpath = "C:\Users\guest\Pictures"
+startpath = "C:\\Users\\guest\\Pictures"
 
 def Move_Files(Origin,Dest):
     print("Moved file {} to {}".format(Origin,Dest))
