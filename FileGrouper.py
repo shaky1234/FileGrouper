@@ -1,12 +1,13 @@
 #Used to group and organize files based on year and month
-from os import mkdir, path, walk
+from os import mkdir, path, walk, rename
 import time, datetime
 
 #Your starting directory
 startpath = "C:\Users\guest\Pictures"
 
 def Move_Files(Origin,Dest):
-    print("{} {}".format(Origin,Dest))
+    print("Moved file {} to {}".format(Origin,Dest))
+    rename(Origin, Dest)
 
 class FileObj:
     def __init__(self, FilePath, File):
